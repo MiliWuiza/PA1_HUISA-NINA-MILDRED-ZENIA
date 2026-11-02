@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Hobbies</title>
+</head>
+<body class="biografia">
+<main class="pagina-bio pagina-hobbies">
+
+    <!-- SECTION 1: ENCABEZADO -->
+    <section class="encabezado">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logop.png" alt="Logo de Mildred"></a>
+            </div>
+            <button class="menu-btn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="biografia.html">Biografia</a>
+                <a href="hobbies.html" class="active">Hobbies</a>
+                <a href="mitierra.html">Mi tierra</a>
+                <a href="favoritos.html">Favoritos</a>
+            </nav>
+        </header>
+    </section>
+
+    <!-- SECTION 2: CUERPO -->
+
+    <!-- Portada -->
+    <section class="hero-bio">
+        <h1>Lo que me gusta hacer en mis tiempos libres</h1>
+    </section>
+
+    <!-- Introducción -->
+    <section class="hobbies-intro">
+        <article>
+            <h2>Mis hobbies</h2>
+            <span class="linea-titulo"></span>
+            <p>Entre el estudio y el trabajo, siempre encuentro un momento para lo que más disfruto:
+               ver anime, ayudar en el campo de mi familia, jugar tenis de mesa, leer novelas y crear mis propias historias.</p>
+        </article>
+    </section>
+
+    <!-- Tarjetas de hobbies -->
+    <section class="hobbies-lista">
+        <article class="hobbies-grid">
+
+            <aside class="hobby-card">
+                <div class="hobby-icono"><i class="fa-solid fa-tv"></i></div>
+                <div class="hobby-texto">
+                    <h3>Anime</h3>
+                    <p>Me gusta ver anime y descubrir historias y personajes nuevos.</p>
+                    <ul class="hobby-etiquetas">
+                        <li>Series</li>
+                        <li>Historias</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside class="hobby-card">
+                <div class="hobby-icono"><i class="fa-solid fa-seedling"></i></div>
+                <div class="hobby-texto">
+                    <h3>Mi campo</h3>
+                    <p>Ayudo en el campo de mi familia cuidando el ganado y cultivando. Ahí aprendo constancia y responsabilidad.</p>
+                    <ul class="hobby-etiquetas">
+                        <li>Ganado</li>
+                        <li>Cultivos</li>
+                        <li>Familia</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside class="hobby-card">
+                <div class="hobby-icono"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+                <div class="hobby-texto">
+                    <h3>Tenis de mesa</h3>
+                    <p>Se me da muy bien el tenis de mesa. Es mi forma de moverme, divertirme y despejar la mente.</p>
+                    <ul class="hobby-etiquetas">
+                        <li>Deporte</li>
+                        <li>Práctica</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside class="hobby-card">
+                <div class="hobby-icono"><i class="fa-solid fa-wand-sparkles"></i></div>
+                <div class="hobby-texto">
+                    <h3>Leer novelas</h3>
+                    <p>Me encanta leer novelas, sobre todo las de Harry Potter.</p>
+                    <ul class="hobby-etiquetas">
+                        <li>Novelas</li>
+                        <li>Harry Potter</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <aside class="hobby-card">
+                <div class="hobby-icono"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div class="hobby-texto">
+                    <h3>Crear historias</h3>
+                    <p>En mis ratos libres invento y escribo mis propias historias.</p>
+                    <ul class="hobby-etiquetas">
+                        <li>Escribir</li>
+                        <li>Imaginar</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </article>
+    </section>
+
+    <!-- Cierre -->
+    <section class="hobbies-cierre">
+        <article>
+            <h2>¿Quieres saber dónde vivo?</h2>
+            <p>Mi campo y mis costumbres son parte de quién soy. Te cuento más en la siguiente página.</p>
+            <a href="mitierra.html" class="btn">Mi tierra</a>
+        </article>
+    </section>
+
+    <!-- SECTION 3: FOOTER -->
+    <section class="pie">
+        <hr>
+        <div class="pie-contenido">
+            <div class="pie-logo">
+                <img src="img/logop.png" alt="Logo de Mildred">
+            </div>
+            <div class="pie-textos">
+                <p>Puno, Perú</p>
+                <p>Tel: 933 429 092</p>
+            </div>
+        </div>
+        <footer>
+            <p>© Mildred Huisa 2026</p>
+        </footer>
+    </section>
+
+</main>
+
+<script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+</body>
+</html>

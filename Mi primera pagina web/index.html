@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mildred Huisa | Blog</title>
+</head>
+<body>
+<main>
+
+    <!-- SECTION 1: ENCABEZADO -->
+    <section class="encabezado">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logop.png" alt="Logo de Mildred"></a>
+            </div>
+            <button class="menu-btn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            <nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="biografia.html">Biografia</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="mitierra.html">Mi tierra</a>
+                <a href="favoritos.html">Favoritos</a>
+            </nav>
+        </header>
+    </section>
+
+    <!-- SECTION 2: CUERPO -->
+    <section class="home">
+        <article class="home-article">
+            <aside class="home-aside">
+                <div class="home-img">
+                    <img src="img/foto.jpeg" alt="Foto de Mildred">
+                </div>
+                <div class="home-content">
+                    <h1>Hola, soy <span>Mildred</span></h1>
+                    <h3 class="typing-text">Soy una <span></span></h3>
+                    <br>
+                    <p>Soy una chica persistente y curiosa. Estudio Ingeniería de Sistemas en la Universidad Continental
+                        y me gusta aprender cómo funcionan las cosas, aunque me tome varios intentos entenderlas. También
+                        disfruto leer y escribir historias. Quiero usar lo que aprendo para ayudar a mi comunidad en Puno.
+                        Este es mi espacio para compartirlo.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/16MKJEvQ4fF/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/@mildred_huisa?si=Y9NwBWIvrfNlc9gP"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@al.aiml?_r=1&_t=ZS-9B2rwCmIgxa"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://wa.me/933429092"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="biografia.html" class="btn">Conóceme</a>
+                </div>
+            </aside>
+        </article>
+    </section>
+
+    <!-- SECTION 3: FOOTER -->
+    <section class="pie">
+        <hr>
+        <div class="pie-contenido">
+            <div class="pie-logo">
+                <img src="img/logop.png" alt="Logo de Mildred">
+            </div>
+            <div class="pie-textos">
+                <p>Puno, Perú</p>
+                <p>Tel: 933 429 092</p>
+            </div>
+        </div>
+        <footer>
+            <p>© Mildred Huisa 2026</p>
+        </footer>
+    </section>
+
+</main>
+
+<script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+</body>
+</html>
